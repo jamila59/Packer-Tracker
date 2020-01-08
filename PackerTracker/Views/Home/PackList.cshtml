@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Packed-Items</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body>
+    @using PackerTracker.Models;
+    <p>List of items packed</p>
+    @foreach (Packed item in Model)
+    {
+        <li>@item.Item</li>
+    }
+   <a href='/'>Click To Home-Page</a>
+  </body>
+</html>
